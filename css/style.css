@@ -126,7 +126,7 @@ h3 {
   background: var(--clr-accent);
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
-  margin-bottom: 1em;
+  margin-bottom: 0em;
 }
 
 .section__subtitle--work {
@@ -452,4 +452,19 @@ social-list__item:hover {
 
 .social-list__link {
   padding: 0.5em;
+}
+
+
+/* Individual portfolio item styles */
+
+.portfolio-item-individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
