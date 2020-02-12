@@ -1,42 +1,185 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Reetu's Portfolio Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans:400,700&display=swap"
+    rel="stylesheet">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+  <!-- Header: BEGIN -->
+  <header class="header">
+    <div class="logo">
+      <img src="https://i.imgur.com/E18VLG5.png" alt="">
+    </div>
 
-  <!-- Add your site or application content here -->
-  <h1>Hi, my name is Reetu!</h1>
-  <p>Hello world! This is my portfolio website.</p>
-  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+        <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Header: END -->
+
+  <!-- Introduction: BEGIN -->
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">Hi, I am<strong>Reetu Davé</strong></h1>
+    <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+    <img src="https://i.imgur.com/frDhOTO.jpg" alt="Reetu leaning against a window" class="intro__img">
+  </section>
+  <!-- Introduction: END -->
+
+  <!-- My Services: BEGIN -->
+  <section class="my-services" id="services">
+    <h2 class="section__title section__title--services">What I do</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Design + Development</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div> <!-- / service -->
+
+      <div class="service">
+        <h3>E-Commerce</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div> <!-- / service -->
+
+      <div class="service">
+        <h3>WordPress</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div> <!-- / service -->
+
+    </div> <!-- / services -->
+
+    <a href="#work" class="btn">My Work</a>
+  </section>
+  <!-- My Services: END -->
+
+  <!-- About Me: BEGIN -->
+  <section class="about-me" id="about">
+    <h2 class="section__title section__title--about">Who I am</h2>
+    <p class="section__subtitle section__subtitle--about">Designer and developer based out of Chicago.</p>
+
+    <div class="about-me__body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+    <img src="https://i.imgur.com/DNtGDM8.jpg" alt="Reetu on a trolly" class="about-me__img">
+
+  </section>
+  <!-- About Me: END -->
+
+  <!-- My Work: BEGIN -->
+  <section class="my-work" id="work">
+    <h2 class="section__title--work">My Work</h2>
+    <p class="section__subtitle--work">A selection of my range of work.</p>
+
+    <div class="portfolio">
+      <!-- Portfolio item 01 -->
+      <a href="#" class="portfolio__item">
+        <img src="https://i.imgur.com/mjcOx4h.jpg" alt="" class="portfolio__img">
+      </a>
+
+      <!-- Portfolio item 02 -->
+      <a href="#" class="portfolio__item">
+        <img src="https://i.imgur.com/4WI3okl.jpg" alt="" class="portfolio__img">
+      </a>
+
+      <!-- Portfolio item 03 -->
+      <a href="#" class="portfolio__item">
+        <img src="https://i.imgur.com/yRNTcrG.jpg" alt="" class="portfolio__img">
+      </a>
+
+      <!-- Portfolio item 04 -->
+      <a href="#" class="portfolio__item">
+        <img src="https://i.imgur.com/ZLKPhAA.jpg" alt="" class="portfolio__img">
+      </a>
+
+      <!-- Portfolio item 05 -->
+      <a href="#" class="portfolio__item">
+        <img src="https://i.imgur.com/ZoHh4s2.jpg" alt="" class="portfolio__img">
+      </a>
+
+      <!-- Portfolio item 06 -->
+      <a href="#" class="portfolio__item">
+        <img src="https://i.imgur.com/qnI5mRb.jpg" alt="" class="portfolio__img">
+      </a>
+
+      <!-- Portfolio item 07 -->
+      <a href="#" class="portfolio__item">
+        <img src="https://i.imgur.com/o2FlNut.jpg" alt="" class="portfolio__img">
+      </a>
+
+      <!-- Portfolio item 08 -->
+      <a href="#" class="portfolio__item">
+        <img src="https://i.imgur.com/Qji3VQE.jpg" alt="" class="portfolio__img">
+      </a>
+
+      <!-- Portfolio item 09 -->
+      <a href="#" class="portfolio__item">
+        <img src="https://i.imgur.com/xf16nAJ.jpg" alt="" class="portfolio__img">
+      </a>
+
+      <!-- Portfolio item 10 -->
+      <a href="#" class="portfolio__item">
+        <img src="https://i.imgur.com/YLi3Viz.jpg" alt="" class="portfolio__img">
+      </a>
+    </div>
+  </section>
+  <!-- My Work: END -->
+
+  <!-- Footer: BEGIN -->
+  <footer class="footer">
+    <a href="mailto:rsdave5@gmail.com" class="footer__link">rsdave5@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a href="https://codepen.io/roslynd89" class="social-list__link"><i class="fab fa-codepen"></i></a>
+
+      </li>
+      <li class="social-list__item">
+        <a href="https://www.behance.net/reetudave" class="social-list__link"><i class="fab fa-behance-square"></i></a>
+
+      </li>
+      <li class="social-list__item">
+        <a href="https://github.com/rsdave5" class="social-list__link"><i class="fab fa-github"></i></a>
+
+      </li>
+      <li class="social-list__item">
+        <a href="https://www.linkedin.com/in/rsdave5/" class="social-list__link"><i class="fab fa-linkedin"></i></a>
+
+      </li>
+    </ul>
+  </footer>
+  <!-- Footer: END -->
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
